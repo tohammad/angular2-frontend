@@ -1,0 +1,50 @@
+<!--<div class='main-nav'>
+    <div class='navbar navbar-inverse'>
+        <div class='navbar-header'>
+            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+                <span class='sr-only'>Toggle navigation</span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+            </button>
+            <a class='navbar-brand' [routerLink]="['/home']">Angular 2 Application</a>
+        </div>
+        <div class='clearfix'></div>
+        <div class='navbar-collapse collapse'>
+            <ul class='nav navbar-nav'>
+                <li [routerLinkActive]="['link-active']">
+                    <a>
+                        <span class='glyphicon glyphicon-home'></span> Home
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a >
+                        <span class='glyphicon glyphicon-education'></span> Counter
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a >
+                        <span class='glyphicon glyphicon-th-list'></span> Fetch data
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/posts']">
+                        <span class='glyphicon glyphicon-th-list'></span> Fetch posts
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>-->
+
+
+
+
+
+<ul class="c-nav">
+    <li class="c-nav__content">MY APP</li>
+    <li class="c-nav__item c-nav__item--brand c-nav__item--active">Create New</li>
+    <li [routerLink]="['/posts']" class="c-nav__item">Posts</li>
+    <li [routerLink]="['/todos']" class="c-nav__item c-nav__item--brand">ToDo's</li>
+    <li [routerLink]="['/posts']" class="c-nav__item c-nav__item--brand">Users</li>
+</ul>
