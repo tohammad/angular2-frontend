@@ -20,8 +20,7 @@
       "styles": [
         "styles.css",
         "../node_modules/font-awesome/scss/font-awesome.scss",
-         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-         "../src/assets/blaze/blaze.min.css"
+         "../node_modules/bootstrap/dist/css/bootstrap.min.css"
       ],
       "scripts": [],
       "environments": {

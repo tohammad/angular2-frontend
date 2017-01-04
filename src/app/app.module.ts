@@ -11,6 +11,8 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import { UserComponent } from './user/user.component';
 import { HttpClient } from './customrequest.options';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { HttpClient } from './customrequest.options';
     PostComponent,
     TodoComponent,
     UserComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     MaterialModule.forRoot(),
