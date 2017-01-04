@@ -48,5 +48,7 @@ p-a-0{
     box-shadow: 0 0 3px #aaa;
 }
 .right-inner{
-    margin:15px;
+    margin:15px 0 15px 15px;
+    height: calc(100vh - 121px);
+    overflow: auto;
 }
