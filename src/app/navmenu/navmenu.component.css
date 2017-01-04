@@ -8,7 +8,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #fff;
+    background: #404e4e;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -16,9 +16,10 @@
 }
 
 .logo{
-    background: #00bcd4;
+    background: #039bae;
     color: #fff;
     height: 48px;
+    text-align: center;
 }
 .logo h3{
     margin:0px;
@@ -58,8 +59,8 @@
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
-    border-bottom: 1px solid #eee;
+    color: #ccc;
+    border-bottom: 1px solid #546060;
 }
 
 .sidebar-nav li a:hover {

@@ -4,16 +4,18 @@
  
     <header class="c-card__header">
       <!--<button type="button" class="c-button c-button--close">×</button>-->
-      <h3>POSTS</h3>
+      <h3>Posts</h3>
       
     </header>
+    <div class="right-inner">
     <div class="c-card__body o-panel">
       <ul class="list-group">
-    <li *ngFor="let post of posts" class="list-group-item">
-      {{ post.title }}
-    </li>
-  
-  </ul>
+        <li *ngFor="let post of posts" class="list-group-item">
+          {{ post.title }}
+        </li>
+      
+      </ul>
+    </div>
     </div>
     <!--<footer class="c-card__footer">
       <button type="button" class="c-button c-button--brand">Close</button>
