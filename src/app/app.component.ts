@@ -4,7 +4,7 @@ import { PostService } from './posts/post.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
   providers: [PostService]
 })
 export class AppComponent implements OnInit {

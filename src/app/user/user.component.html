@@ -1,13 +1,13 @@
 <h3>Users</h3>
 <div class="right-inner">
-<md-nav-list>
-  
-  <md-list-item *ngFor="let user of users">
-     <a md-line href="/userdetail">{{ user.name }}</a>
-     <button md-icon-button (click)="showUserInfo(user)">
-        <md-icon>info</md-icon>
-     </button>
-     <img md-list-avatar src="../assets/images/pic1.jpg" alt="...">
-  </md-list-item>
-</md-nav-list>
+  <md-nav-list>
+    
+    <md-list-item *ngFor="let user of users">
+      <a md-line href="/userdetail">{{ user.name }}</a>
+      <button md-icon-button (click)="showUserInfo(user)">
+          <md-icon>info</md-icon>
+      </button>
+      <img md-list-avatar src="../assets/images/pic1.jpg" alt="...">
+    </md-list-item>
+  </md-nav-list>
 </div>
