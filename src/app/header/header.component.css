@@ -3,11 +3,16 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #00bcd4;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    padding-left: 250px;
 }
 
 li {
-    float: left;
+    float: right;
 }
 
 li a {

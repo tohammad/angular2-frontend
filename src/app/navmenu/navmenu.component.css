@@ -1,30 +1,31 @@
-#wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#wrapper.toggled {
-    padding-left: 250px;
-}
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
+    top: 0px;
     left: 250px;
     width: 0;
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #fff;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
+.logo{
+    background: #00bcd4;
+    color: #fff;
+    height: 48px;
+}
+.logo h3{
+    margin:0px;
+    padding: 10px;
+    font-weight: 300;
+
+}
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
 }
@@ -41,7 +42,7 @@
 }
 
 .sidebar-nav {
-    position: absolute;
+   
     top: 0;
     width: 250px;
     margin: 0;
@@ -58,12 +59,13 @@
     display: block;
     text-decoration: none;
     color: #999999;
+    border-bottom: 1px solid #eee;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: #00bcd4;
 }
 
 .sidebar-nav li a:active,
@@ -82,7 +84,7 @@
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
+    color: #00bcd4;
     background: none;
 }
 
