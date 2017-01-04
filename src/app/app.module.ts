@@ -7,21 +7,28 @@ import { NavmenuComponent } from './navmenu/navmenu.component';
 import { routing } from './app.routing';
 import { PostComponent } from './posts/post.component';
 import { TodoComponent } from './todo/todo.component';
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
+import { UserComponent } from './user/user.component';
+import { HttpClient } from './customrequest.options';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavmenuComponent,
     PostComponent,
-    TodoComponent
+    TodoComponent,
+    UserComponent,
   ],
   imports: [
+    MaterialModule.forRoot(),
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

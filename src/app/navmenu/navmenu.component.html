@@ -40,11 +40,18 @@
 
 
 
+<md-sidenav-container>
+    
+    <md-sidenav mode="side" opened="true">
+        <div class="o-field o-field--icon-right">
+  <input class="c-field" type="text">
+  <i class="fa fa-fw fa-search c-icon"></i>
+</div>
+        <ul>
 
-<ul class="c-nav">
-    <li class="c-nav__content">MY APP</li>
-    <li class="c-nav__item c-nav__item--brand c-nav__item--active">Create New</li>
-    <li [routerLink]="['/posts']" class="c-nav__item">Posts</li>
-    <li [routerLink]="['/todos']" class="c-nav__item c-nav__item--brand">ToDo's</li>
-    <li [routerLink]="['/posts']" class="c-nav__item c-nav__item--brand">Users</li>
-</ul>
+            <li [routerLink]="['/posts']" class="c-nav__item">Posts</li>
+            <li [routerLink]="['/users']" class="c-nav__item c-nav__item--brand">Users</li>
+        </ul>
+    </md-sidenav>
+
+</md-sidenav-container>
