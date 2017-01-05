@@ -13,6 +13,9 @@ import { UserComponent } from './user/user.component';
 import { HttpClient } from './customrequest.options';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { SubheaderComponent } from './subheader/subheader.component';
+import {AgGridModule} from 'ag-grid-ng2/main';
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     UserComponent,
     HeaderComponent,
     FooterComponent,
+    SubheaderComponent,
+    GridComponent,
   ],
   imports: [
     MaterialModule.forRoot(),
@@ -30,6 +35,7 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     HttpModule,
     routing,
+    AgGridModule.withComponents([UserComponent])
     
   ],
   providers: [HttpClient],

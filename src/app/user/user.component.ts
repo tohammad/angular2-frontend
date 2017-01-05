@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { User } from './user';
 import { UserService } from './user.service';
 
+import {GridOptions} from 'ag-grid/main';
+
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
