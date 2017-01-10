@@ -7,7 +7,7 @@ export class HttpClient {
   urlPrefix: string = "";
   constructor(private http: Http) {
     this.http = http;
-    this.urlPrefix = 'http://localhost:5000/api';
+    // this.urlPrefix = 'http://localhost:5000/api';
   }
 
   get(url) {

@@ -4,7 +4,7 @@ import {GridOptions, IFilter} from 'ag-grid/main';
 @Component({
   selector: 'app-grid',
   templateUrl: './grid.component.html',
-  styleUrls: ['./grid.component.css']
+  styleUrls: ['./grid.component.scss']
 })
 export class GridComponent implements OnInit {
 
@@ -73,8 +73,8 @@ export class GridComponent implements OnInit {
     }
 
     private countryCellRenderer(params) {
-        var flag = "<img border='0' width='15' height='10' style='margin-bottom: 2px' src='images/flags/" + "aaa" + ".png'>";
-        return flag + " " + params.value;
+        //  var flag = "<img border='0' width='15' height='10' style='margin-bottom: 2px' src='images/flags/" + "aaa" + ".png'>";
+        //  return flag + " " + params.value;
     }
 
     //noinspection JSUnusedLocalSymbols

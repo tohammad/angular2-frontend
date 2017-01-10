@@ -11,13 +11,13 @@
         <div style="padding: 4px;" class="toolbar">
             <span>
                 Grid API:
-                <button (click)="agGrid.api.selectAll()">Select All</button>
-                <button (click)="agGrid.api.deselectAll()">Clear Selection</button>
+                <button (click)="agGrid.api.selectAll()" class="btn btn-primary">Select All</button>
+                <button (click)="agGrid.api.deselectAll()" class="btn btn-primary">Clear Selection</button>
             </span>
         </div>
         <div style="clear: both;"></div>
         <div style="padding: 4px;" class="toolbar">
-            <button (click)="createRowData()">Refresh Data</button>
+            <button (click)="createRowData()"  class="btn btn-primary">Refresh Data</button>
         </div>
         <div style="clear: both;"></div>
 
