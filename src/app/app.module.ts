@@ -15,6 +15,12 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {AgGridModule} from 'ag-grid-ng2/main';
 import { GridComponent } from './grid/grid.component';
+import { UserdetailComponent } from './userdetail/userdetail.component';
+import { AddUserComponent } from './user/add-user.component';
+import { CommentComponent } from './comments/comment.component';
+import { CommentFormComponent } from './comments/comment-form.component';
+import { CommentBoxComponent } from './comments/comment-box.component';
+import { CommentListComponent } from './comments/comment-list.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +32,12 @@ import { GridComponent } from './grid/grid.component';
     HeaderComponent,
     FooterComponent,
     GridComponent,
+    UserdetailComponent,
+    AddUserComponent,
+    CommentComponent,
+    CommentFormComponent,
+    CommentBoxComponent,
+    CommentListComponent,
   ],
   imports: [
     MaterialModule.forRoot(),

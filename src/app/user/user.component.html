@@ -1,11 +1,18 @@
-<h3>Users</h3>
+<div>
+  <h3>Users
+<a [routerLink]="['/adduser']">
+    <i class="fa fa-user-plus fa-align-right"  aria-hidden="true"></i>
+</a>
+</h3>
+</div>
 <div class="right-inner">
-<app-grid></app-grid>
+  
+<!--<app-grid></app-grid>-->
 
   <md-nav-list>
     
     <md-list-item *ngFor="let user of users">
-      <a md-line href="/userdetail">{{ user.name }}</a>
+      <a md-line href="/userdetail">{{ user.firstName }}</a>
       <button md-icon-button (click)="showUserInfo(user)">
           <md-icon>info</md-icon>
       </button>

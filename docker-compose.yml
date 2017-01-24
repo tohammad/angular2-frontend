@@ -1,0 +1,13 @@
+
+version: '2'
+
+services:
+  angular2-frontend:
+    image: angular2-frontend:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 4200:4200

@@ -1,6 +1,6 @@
 import { Observer } from 'rxjs/Rx';
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http, Headers, RequestOptions, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { User } from './user';
 import { HttpClient } from '../customrequest.options';
@@ -16,9 +16,8 @@ export class UserService {
     .map(res => res.json());
   } 
 
-  createUser(user: User) {
-    return this.httpClient.post(this.url, JSON.stringify(user))
-    .map(res => res.json());
-  }
+   createUser (user: Object): Observable<User> {
+        return this.httpClient.post(this.url, JSON.stringify(user)); // ...using post request
+    }   
 
 }

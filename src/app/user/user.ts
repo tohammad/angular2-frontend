@@ -1,6 +1,11 @@
-export interface User {
+export class User {
     employeeId: string;
-    name: number;
-    designation: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    contactNumber: string;
+    joiningDate: string;
     department: string;
+    designation: string;
+    reportingTo: string;
 }
